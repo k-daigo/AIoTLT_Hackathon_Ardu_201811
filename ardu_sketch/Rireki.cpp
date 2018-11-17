@@ -17,5 +17,15 @@ void SaveRireki() {
 /**
 * @brief サーバにデータを送信する
 */
-void SendToServer();
+void SendToServer(){
+    return;
+}
+
+/**
+* @brief 汚部屋判定
+*/
+void JudgeObeya(){
+    return;
+}
+
 

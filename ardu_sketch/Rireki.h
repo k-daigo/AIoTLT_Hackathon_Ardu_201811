@@ -7,4 +7,5 @@
 
 void SaveRireki();
 void SendToServer();
+void JudgeObeya();
 
