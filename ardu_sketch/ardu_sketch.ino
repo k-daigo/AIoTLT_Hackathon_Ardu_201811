@@ -1,3 +1,10 @@
+/**
+* @brief メイン
+* @author k-daigo
+* @date 2018/11/17
+* @details -
+*/
+
 #include "Const.h"
 #include "ML.h"
 #include "Rireki.h"
@@ -11,7 +18,6 @@ int prev_voice_kbn = VOICE_KBN_GOOD;
 
 void setup()
 {
-  // put your setup code here, to run once:
 }
 
 void loop()
@@ -57,7 +63,6 @@ void loop()
   else
   {
     // 汚部屋閾値未満
-      voice_kbn = VOICE_KBN_GOOD;
-    
+    voice_kbn = VOICE_KBN_GOOD;
   }
 }
