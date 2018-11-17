@@ -6,4 +6,5 @@
 */
 
 void SaveRireki();
+void SendToServer();
 

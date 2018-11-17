@@ -47,7 +47,8 @@ void loop()
 
   // 履歴保存
   SaveRireki();
-
+  SendToServer();
+  
   // 汚部屋度判定
   if (prev_voice_kbn != VOICE_KBN_ALTER)
   {
