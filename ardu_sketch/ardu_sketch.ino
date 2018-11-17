@@ -1,13 +1,9 @@
+#include "Const.h"
 #include "ML.h"
 #include "Rireki.h"
 #include "Sound.h"
 
 #define PROC_INTERVAL (30 * 60 * 1000)
-#define VOICE_KBN_GOOD 0
-#define VOICE_KBN_ALTER 1
-
-// 経過時間
-//unsigned long time;
 
 // ボイス区分
 int voice_kbn = VOICE_KBN_GOOD;
