@@ -1,2 +1,2 @@
-void Predict();
+double predict();
 

@@ -1,5 +1,5 @@
 #include "Sound.h"
 
-void OutputSound() {
+void output_sound() {
     return;
 }

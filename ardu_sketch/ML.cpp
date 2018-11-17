@@ -1,5 +1,5 @@
 #include "ML.h"
 
-void Predict() {
-    return;
+double predict() {
+    return 0.0;
 }

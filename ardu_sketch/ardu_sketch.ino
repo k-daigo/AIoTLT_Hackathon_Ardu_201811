@@ -44,12 +44,14 @@ void loop()
   // 画像撮影
 
   // 推論実行
+  double result_predict = predict();
 
   // 履歴保存
-  SaveRireki();
-  SendToServer();
-  
+  save_rireki(result_predict);
+  send_to_server(result_predict);
+
   // 汚部屋度判定
+  int now_voice_kbn = judge_obeya(result_predict);
   if (prev_voice_kbn != VOICE_KBN_ALTER)
   {
     // 汚部屋閾値以上

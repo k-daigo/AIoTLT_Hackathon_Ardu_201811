@@ -1,1 +1,1 @@
-void OutputSound();
+void output_sound();
