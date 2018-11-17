@@ -35,7 +35,7 @@ int judge_obeya(double result_predict)
 {
     if (result_predict > OBEYA_THRESHOLD)
     {
-        return VOICE_KBN_ALTER;
+        return VOICE_KBN_ALERT;
     }
 
     return VOICE_KBN_GOOD;

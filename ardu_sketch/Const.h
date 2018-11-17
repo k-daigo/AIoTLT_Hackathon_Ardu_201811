@@ -5,5 +5,6 @@
 * @details -
 */
 
-#define VOICE_KBN_GOOD 0
-#define VOICE_KBN_ALTER 1
+#define VOICE_KBN_NONE 0
+#define VOICE_KBN_GOOD 1
+#define VOICE_KBN_ALERT 2

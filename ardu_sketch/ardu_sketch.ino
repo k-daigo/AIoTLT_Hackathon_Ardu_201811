@@ -29,7 +29,7 @@ void loop()
   boolean hito_iru = false;
   if (hito_iru)
   {
-    if (voice_kbn == VOICE_KBN_ALTER)
+    if (voice_kbn == VOICE_KBN_ALERT)
     {
       // ボイス発話（アラート）
     }
@@ -52,20 +52,27 @@ void loop()
 
   // 汚部屋度判定
   int now_voice_kbn = judge_obeya(result_predict);
-  if (prev_voice_kbn != VOICE_KBN_ALTER)
-  {
-    // 汚部屋閾値以上
-    if (true)
-    {
-      voice_kbn = VOICE_KBN_ALTER;
 
-      // インスタ投稿
-      // NOP
+  // 変動なしの為のNONE区分
+  voice_kbn = VOICE_KBN_NONE;
+
+  // 前回がキレイで今回汚部屋になったらアラート
+  if (prev_voice_kbn != VOICE_KBN_ALERT)
+  {
+    if (now_voice_kbn == VOICE_KBN_ALERT)
+    {
+      voice_kbn = VOICE_KBN_ALERT;
     }
   }
+  // 前回が汚部屋で今回キレイになったら褒める
   else
   {
-    // 汚部屋閾値未満
-    voice_kbn = VOICE_KBN_GOOD;
+    if (now_voice_kbn == VOICE_KBN_GOOD)
+    {
+      voice_kbn = VOICE_KBN_GOOD;
+    }
   }
+
+  // 前回の汚部屋度として保持
+  prev_voice_kbn = now_voice_kbn;
 }
