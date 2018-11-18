@@ -47,25 +47,25 @@ void output_sound(VOICE_KBN) {
             // VOICE_KBN_NONE
             case VOICE_KBN_NONE:
               // make file path
-              sprintf(file_path, "/%s/%s", MOUNT_NAME, "sound1.wav");
+              sprintf(file_path, "/%s/%s", MOUNT_NAME, "none_voice.wav");
               break;
               
             // ホメる
             case VOICE_KBN_GOOD:
               // make file path
-              sprintf(file_path, "/%s/%s", MOUNT_NAME, "sound1.wav");
+              sprintf(file_path, "/%s/%s", MOUNT_NAME, "good_voice.wav");
               break;
             
             // アラート
             case VOICE_KBN_ALERT:
               // make file path
-              sprintf(file_path, "/%s/%s", MOUNT_NAME, "sound1.wav");
+              sprintf(file_path, "/%s/%s", MOUNT_NAME, "alert_voice.wav");
               break;
             
             // 想定外数値�
             default:
               // make file path
-              sprintf(file_path, "/%s/%s", MOUNT_NAME, "sound1.wav");
+              sprintf(file_path, "/%s/%s", MOUNT_NAME, "default_voice.wav");
               break;      
           }
           // デバッグ用
