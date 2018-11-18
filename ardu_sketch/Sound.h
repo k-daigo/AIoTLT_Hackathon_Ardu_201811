@@ -1,1 +1,1 @@
-void output_sound();
+void output_sound(VOICE_KBN);
