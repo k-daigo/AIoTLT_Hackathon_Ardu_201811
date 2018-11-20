@@ -1,2 +1,3 @@
-double predict();
+void ml_init();
+int predict();
 

@@ -5,7 +5,7 @@
 * @details -
 */
 
-void save_rireki(double result_predict);
-void send_to_server(double result_predict);
-int judge_obeya(double result_predict);
+void save_rireki(int result_predict);
+void send_to_server(int result_predict);
+int judge_obeya(int result_predict);
 

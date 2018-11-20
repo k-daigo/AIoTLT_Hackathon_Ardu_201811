@@ -20,7 +20,7 @@
 static EasyPlayback AudioPlayer;
 
   
-void output_sound(VOICE_KBN) {
+void output_sound(int VOICE_KBN) {
     DIR  * d;
     struct dirent * p;
 
@@ -49,7 +49,7 @@ void output_sound(VOICE_KBN) {
               // make file path
               sprintf(file_path, "/%s/%s", MOUNT_NAME, "none_voice.wav");
               break;
-              
+            
             // ホメる
             case VOICE_KBN_GOOD:
               // make file path
@@ -62,7 +62,7 @@ void output_sound(VOICE_KBN) {
               sprintf(file_path, "/%s/%s", MOUNT_NAME, "alert_voice.wav");
               break;
             
-            // 想定外数値�
+            // 想定外数値�
             default:
               // make file path
               sprintf(file_path, "/%s/%s", MOUNT_NAME, "default_voice.wav");
